@@ -4,9 +4,11 @@ import * as React from 'react';
 import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { ThemeProvider } from 'styled-components'; 
 import Home from './src/pages/Home';
 import InfoWeather from './src/pages/InfoWeather';
 import About from './src/pages/About';
+import styledComponentsNative from 'styled-components/native';
 
 const Stack = createNativeStackNavigator();
 

@@ -48,8 +48,6 @@ export default function CityInformatio(props) {
           setMin(data[id][dateformat].noite.temp_min)
         }
 
-
-
     }, [])
 
 

@@ -1,5 +1,6 @@
-import { View, Text, StyleSheet, Image, Linking, TouchableOpacity} from 'react-native'
+import { View, Text, StyleSheet}from 'react-native'
 import React from 'react'
+import StyleIcons from '../components/StyleIcons'
 
 
 export default function About() {
@@ -12,33 +13,26 @@ export default function About() {
 
       <View style={styles.line}>
 
-      <TouchableOpacity onPress={() => Linking.openURL('https://patrickpiccini.github.io/')}>
-          <Image
-          style={{height:50, width:50, marginHorizontal: 10}}
-          source={{uri:'https://cdn-icons.flaticon.com/png/512/5094/premium/5094498.png?token=exp=1650250043~hmac=41a5b6ec0abde6dc1231d4b056b3119d'}}
-          />
-        </TouchableOpacity>
+        <StyleIcons 
+        link={'https://patrickpiccini.github.io/'}
+        icon={'https://cdn-icons.flaticon.com/png/512/5094/premium/5094498.png?token=exp=1650250043~hmac=41a5b6ec0abde6dc1231d4b056b3119d'}
+        />
 
-        <TouchableOpacity onPress={() => Linking.openURL('https://github.com/patrickpiccini')}>
-          <Image
-          style={{height:50, width:50, marginHorizontal: 10}}
-          source={{uri:'https://cdn-icons.flaticon.com/png/512/1240/premium/1240971.png?token=exp=1650249310~hmac=a88b79606cc7ff80bbb31dab24c7440e'}}
-          />
-        </TouchableOpacity>
+        <StyleIcons 
+        link={'https://github.com/patrickpiccini'}
+        icon={'https://cdn-icons.flaticon.com/png/512/1240/premium/1240971.png?token=exp=1650249310~hmac=a88b79606cc7ff80bbb31dab24c7440e'}
+        />
 
-        <TouchableOpacity onPress={() => Linking.openURL('https://www.linkedin.com/in/patrick-berlatto-piccini-8414a91a7/')}>
-          <Image
-          style={{height:50, width:50, marginHorizontal: 10}}
-          source={{uri:'https://cdn-icons-png.flaticon.com/512/220/220343.png'}}
-          />
-        </TouchableOpacity>
-        
-        <TouchableOpacity onPress={() => Linking.openURL('mailto:patrickpiccini@hotmail.com')}>
-          <Image
-          style={{height:50, width:50, marginHorizontal: 10}}
-          source={{uri:'https://cdn-icons-png.flaticon.com/512/1034/1034146.png'}}
-          />
-        </TouchableOpacity>
+        <StyleIcons 
+        link={'https://www.linkedin.com/in/patrick-berlatto-piccini-8414a91a7/'}
+        icon={'https://cdn-icons-png.flaticon.com/512/220/220343.png'}
+        />
+
+        <StyleIcons 
+        link={'mailto:patrickpiccini@hotmail.com'}
+        icon={'https://cdn-icons-png.flaticon.com/512/1034/1034146.png'}
+        />
+  
       </View>
 
     </View>

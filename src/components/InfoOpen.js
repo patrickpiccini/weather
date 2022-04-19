@@ -7,17 +7,8 @@ export default function InfoOpen(props) {
     const data = props.data
     const title = props.title
     const [modalVisible, setModalVisible] = useState(false);
-    var bitmap = (base64str) =>  fs.readFileSync('./your-image.png', 'base64');
-
-    useLayoutEffect(() => {
-        if(modalVisible == false){
-
-        }
-    }, [])
 
     return (
-
-
     <TouchableOpacity onPress={ () =>{setModalVisible(!modalVisible)}}> 
 
 
@@ -59,10 +50,6 @@ export default function InfoOpen(props) {
                     <Text>Nascer do Sol: {data.nascer}</Text>
                     <Text>Por do Sol : {data.ocaso}</Text>
                     </View>
-
-                    
-                    
-
 
             </View>
         
